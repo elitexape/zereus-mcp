@@ -1,0 +1,36 @@
+{
+    "name": "zereus-mcp-server",
+    "version": "1.0.0",
+    "description": "MCP server for Zereus zAI market intelligence",
+    "main": "build/index.js",
+    "type": "module",
+    "bin": {
+        "zereus-mcp": "./build/index.js"
+    },
+    "scripts": {
+        "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+        "start": "node build/index.js"
+    },
+    "keywords": [
+        "zereus",
+        "solana",
+        "mcp",
+        "model-context-protocol",
+        "ai",
+        "market-intelligence"
+    ],
+    "author": "Zereus",
+    "license": "MIT",
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "^1.5.0",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.7",
+        "express": "^5.0.1",
+        "node-fetch": "^3.3.2",
+        "zod": "^3.24.2"
+    },
+    "devDependencies": {
+        "@types/node": "^22.13.4",
+        "typescript": "^5.7.3"
+    }
+}
