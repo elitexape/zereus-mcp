@@ -1,9 +1,7 @@
-node_modules/
-build/
+node_modules
 .env
-.DS_Store 
-dist/
-data/
-logs/
-tsconfig.tsbuildinfo
-yarn.lock
+.DS_Store
+.vscode
+dist
+build
+package-lock.json
